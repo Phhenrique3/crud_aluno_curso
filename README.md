@@ -50,6 +50,7 @@ mvn clean install
 mvn exec:java
 
 
+
 O sistema será iniciado e você poderá interagir com o menu de opções.
 
 🧪 Testes
@@ -57,6 +58,25 @@ O sistema será iniciado e você poderá interagir com o menu de opções.
 Para rodar os testes automatizados:
 
 mvn test
+
+
+POSTMAN 
+http://localhost:8080/curso
+
+{
+    "id": 1,
+    "nome": "ADS 2, 3",
+    "cargaHoraria": 100
+}
+http://localhost:8080/aluno
+{
+  "nome": "neymar  ",
+  "email": "pedro@email.com",
+  "dataNadcimento": "2000-01-01",
+  "curso": {
+    "id": 1
+  }
+}
 
 
 Os testes estão localizados no diretório src/test/java.
@@ -69,3 +89,4 @@ para mais detalhes.
 👤 Autor
 
 Phhenrique3
+
